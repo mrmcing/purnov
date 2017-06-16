@@ -88,10 +88,10 @@
                                 <li>- Умеете отличать слабого покупателя от сильного то опционные сделки Вам принесут прибыль <strong>гораздо легче и стабильнее.</strong></li>
                             </ul>
                         </div>
-                        <div class="col-md-2 col-sm-6 hidden-xs">
+                        <div class="col-md-2 col-sm-3 hidden-xs">
                             <img class="img-responsive" src="img/icon/arrow-group.png" alt="">
                         </div>
-                        <div class="col-md-5 col-sm-6 col-xs-12">
+                        <div class="col-md-5 col-sm-9 col-xs-12">
                             <div class="media">
                                 <div class="media-left hidden-xs">
                                     <img class="media-object" src="img/icon/important.png" alt="...">
@@ -111,7 +111,7 @@
     <div class="wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-6 col-md-offset-3 col-xs-12">
                     <h2>Опционы позволяют войти в позицию более надежно и легче</h2>
                     <div class="sub-title">курс подходит для:</div>
                 </div>
@@ -120,7 +120,7 @@
     </div>
     <div class="container ct-rel">
         <div class="row">
-            <div class="col-md-6 beginners">
+            <div class="col-md-6 col-sm-6 col-xs-12 beginners">
                 <p><i class="icon"></i> <span>новичков</span></p>
                 <div class="box">
                     <div class="box-body">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 experienced">
+            <div class="col-md-6 col-sm-6 col-xs-12 experienced">
                 <p><i class="icon"></i> <span>опытных</span></p>
                 <div class="box">
                     <div class="box-body">
@@ -136,7 +136,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8 col-md-offset-2 col-xs-12">
                 <div class="box-course">
                     <p>Если Вы хотите  постоянно испытывать психологический комфорт при торговле, ощущать себя не дичью, а охотником, планомерно расставляющим силки и получающим прибыль при любом неожиданном движении рынка в любую сторону, то <strong>этот курс именно для Вас!</strong></p>
                 </div>
@@ -155,17 +155,17 @@
     <div class="wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-10 col-md-offset-1 col-xs-12">
                     <div class="box-section section-1">
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-sm-2 col-xs-12">
                                 <div class="box-section-number">
                                     <div class="item-section">Раздел</div>
                                     <div class="item-number">01</div>
                                     <div class="item-image"><img class="img-responsive" src="img/icon/item-image-1.png" alt=""></div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-sm-10 col-xs-12">
                                 <div class="box-description">
                                     <div class="title">Базовые знания</div>
                                     <ul>
@@ -177,21 +177,21 @@
                                     <p>+1 сессия вопрос/ответ</p>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-xs-12">
                                 <div class="box-price">26 000 <i class="fa fa-rub"></i></div>
                             </div>
                         </div>
                     </div>
                     <div class="box-section section-2">
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-sm-2 col-xs-12">
                                 <div class="box-section-number">
                                     <div class="item-section">Раздел</div>
                                     <div class="item-number">02</div>
                                     <div class="item-image"><img class="img-responsive" src="img/icon/item-image-2.png" alt=""></div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-sm-10 col-xs-12">
                                 <div class="box-description">
                                     <div class="title">Принципы и техники торговли опционами</div>
                                     <ul>
@@ -203,21 +203,21 @@
                                     <p>+1 сессия вопрос/ответ</p>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-xs-12">
                                 <div class="box-price">26 000 <i class="fa fa-rub"></i></div>
                             </div>
                         </div>
                     </div>
                     <div class="box-section section-3">
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-sm-2 col-xs-12">
                                 <div class="box-section-number">
                                     <div class="item-section">Раздел</div>
                                     <div class="item-number">03</div>
                                     <div class="item-image"><img src="img/icon/item-image-3.png" alt=""></div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 col-sm-10 col-xs-12">
                                 <div class="box-description">
                                     <div class="title">Боевые опционные стратегии и тактики</div>
                                     <ul>
@@ -229,7 +229,7 @@
                                     <p>+1 сессия вопрос/ответ</p>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-2 col-xs-12">
                                 <div class="box-price">26 000 <i class="fa fa-rub"></i></div>
                             </div>
                         </div>
@@ -242,16 +242,16 @@
 <section class="price">
     <div class="container">
         <div class="row">
-            <div class="col-md-7 col-md-offset-1">
+            <div class="col-md-7 col-md-offset-1 col-sm-10 col-xs-12">
                 <div class="box-price">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-12">
                             <p class="description"><span>цена</span> полного курса:</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-12">
                             <p class="count">68 000 <i class="fa fa-rub"></i></p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-12">
                             <a href="#" class="btn btn-buy" target="_blank">купить</a>
                         </div>
                     </div>
@@ -263,10 +263,10 @@
 <section class="waste-time">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 col-sm-8 col-xs-12">
                 <p>Зачем тратить время на поиски ответов на вопросы от сомнительных авторов, когда большинство интересующей вас информации собрано в одном месте?</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4 col-xs-12">
                 <img class="img-responsive" src="img/quality-assurance.png" alt="">
             </div>
         </div>

@@ -455,6 +455,7 @@ section.training-program .wrapper {
 }
 .box-section .box-section-number .item-image img {
     min-height: 80px;
+    max-height: 80px;
 }
 
 .box-section .box-description {
@@ -607,8 +608,6 @@ section.waste-time .img-responsive {
 }
 
 
-
-
 footer {
     background-color: rgb(220, 220, 220);
     font-size: 12px;
@@ -681,8 +680,7 @@ footer ul li .fa {
     }
 
     section.preview {
-        min-height: 100%;
-        padding-bottom: 0;
+        padding-bottom: 25px;
     }
     section.preview header {
         max-height: 100%;
@@ -695,14 +693,130 @@ footer ul li .fa {
 
     section.preview h1 {
         margin-top: 60px;
-        font-size: 48px;
+        font-size: 34px;
     }
-    section.preview h1 span {
-        display: block;
+
+    section.preview .box-what-is-it {
+        position: relative;
+        margin: 20px 0 0;
+        width: 100%;
+        bottom: auto;
+        left: auto;
+        padding: 20px;
     }
-    section.preview .sub-title {
-        font-size: 32px;
+    section.preview .box-what-is-it .icon-rocket {
+        display: none;
     }
+    section.preview .box-what-is-it ul {
+        padding-left: 0;
+    }
+    section.preview .box-what-is-it ul li {
+        font-size: 14px;
+    }
+
+    section.particularly-useful {
+        margin-top: 50px;
+    }
+    section.particularly-useful .box-group {
+        margin-top: 25px;
+    }
+
+    section.options-allow .wrapper {
+        margin-bottom: 50px !important;
+        padding: 25px 0;
+    }
+    section.options-allow h2 {
+        margin-top: 0;
+    }
+    section.options-allow .sub-title {
+        margin-bottom: 0;
+    }
+
+    section.options-allow .col-md-6.beginners,
+    section.options-allow .col-md-6.experienced {
+        position: relative !important;
+        top: auto !important;
+    }
+
+    section.options-allow .box {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    section.options-allow .wrapper {
+        margin-bottom: 260px;
+    }
+    section.options-allow .col-md-6.beginners, section.options-allow .col-md-6.experienced {
+        top: -385px;
+    }
+    section.options-allow .box-course {
+        margin-top: 170px;
+    }
+
+    .box-section {
+        padding: 0;
+    }
+    .box-section .box-section-number {
+        width: 100%;
+    }
+    .box-section .box-section-number .item-section {
+        position: relative;
+        top: auto;
+        border-radius: 10px 10px 0 0;
+    }
+    .box-section .box-section-number .item-number {
+        margin: 0;
+        padding: 25px 0;
+    }
+    .box-section .box-section-number .item-image {
+        position: relative;
+        bottom: auto;
+        padding: 25px 10px;
+        border-radius: 0;
+    }
+    .box-section .box-section-number .item-image img {
+        margin: 0 auto;
+    }
+
+    .box-section .box-description {
+        padding: 0 20px;
+        text-align: center;
+    }
+    .box-section .box-description .title {
+        font-size: 19px;
+    }
+
+    .box-section .box-description {
+        font-size: 14px;
+        min-height: 210px;
+        padding-top: 30px;
+    }
+    .box-section .box-price {
+        font-size: 28px;
+        margin: 25px 0;
+    }
+
+    section.price .box-price .row {
+        flex-direction: column;
+    }
+    section.waste-time .row {
+        flex-direction: column;
+    }
+
+    section.waste-time {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    section.waste-time .img-responsive {
+        width: 180px;
+        height: 180px;
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin: 25px auto 0;
+    }
+
 
     footer {
         text-align: center;
@@ -731,11 +845,89 @@ footer ul li .fa {
 
 /* Medium Devices, Desktops */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    section.preview {
+        padding-bottom: 25px;
+    }
     section.preview header .tagline {
         font-size: 26px;
     }
     section.preview h1 {
         margin-top: 60px;
+    }
+
+    section.preview .box-what-is-it {
+        position: relative;
+        margin: 20px 0 0;
+        width: 100%;
+        bottom: auto;
+        left: auto;
+        padding: 20px;
+    }
+    section.preview .box-what-is-it .icon-rocket {
+        width: 120px;
+        height: 100px;
+    }
+    section.preview .box-what-is-it ul {
+        padding-left: 0;
+    }
+    section.preview .box-what-is-it ul li {
+        font-size: 14px;
+    }
+
+    section.particularly-useful {
+        margin-top: 50px;
+    }
+    section.particularly-useful .box-group {
+        margin-top: 25px;
+    }
+    section.options-allow .box {
+        width: 95%;
+    }
+    section.options-allow .wrapper {
+        margin-bottom: 260px;
+    }
+    section.options-allow .col-md-6.beginners, section.options-allow .col-md-6.experienced {
+        top: -385px;
+    }
+
+    .box-section .box-section-number {
+        width: 100%;
+    }
+    .box-section .box-section-number .item-section {
+        top: -25px;
+        border-radius: 10px 0 10px 0;
+    }
+    .box-section .box-section-number .item-number {
+        margin: 0;
+        padding: 25px 0;
+    }
+    .box-section .box-section-number .item-image {
+        bottom: -126px;
+        padding: 25px 10px;
+        border-radius: 0 10px 0 10px;
+    }
+
+    .box-section .box-description .title {
+        font-size: 19px;
+    }
+
+    .box-section .box-description {
+        font-size: 14px;
+        min-height: 210px;
+        padding-top: 30px;
+    }
+    .box-section .box-price {
+        font-size: 28px;
+        position: absolute;
+        right: 25px;
+        top: -220px;
+    }
+
+    section.waste-time .img-responsive {
+        width: 240px;
+        height: 240px;
+        margin-right: -120px;
+        margin-bottom: -120px;
     }
 
     footer {
@@ -747,11 +939,13 @@ footer ul li .fa {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-    section.preview {
-        min-height: 100%;
-        padding-bottom: 50px;
+    section.options-allow .box {
+        width: 95%;
     }
-    section.preview h1 {
-        margin-top: 20px;
+    .box-section {
+        min-height: 280px;
+    }
+    .box-section .box-section-number .item-number {
+        margin: 35px 0;
     }
 }
