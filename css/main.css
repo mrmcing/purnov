@@ -475,11 +475,32 @@ section.training-program .wrapper {
     margin-bottom: 5px;
 }
 
+.box-section .col-xs-12.text-center {
+    margin-top: 120px;
+}
 .box-section .box-price {
     font-size: 30px;
     color: rgb(228, 79, 83);
     text-transform: uppercase;
     text-align: center;
+}
+.box-section .btn-buy {
+    border-radius: 10px;
+    border-color: rgb(228, 79, 83);
+    border-width: 2px;
+    color: rgb(50, 48, 65);
+    font-size: 16px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+}
+.box-section .btn-buy:focus,
+.box-section .btn-buy:hover {
+    background-color: rgb(228, 79, 83);
+    color: rgb(255,255,255);
 }
 
 .box-section.section-1 .box-section-number .item-section {
@@ -790,9 +811,17 @@ footer ul li .fa {
         min-height: 210px;
         padding-top: 30px;
     }
+    .box-section .col-xs-12.text-center {
+        margin-top: 0;
+    }
     .box-section .box-price {
         font-size: 28px;
-        margin: 25px 0;
+        margin: 10px 0;
+    }
+    .box-section .btn-buy {
+        margin-top: 0;
+        margin-bottom: 25px;
+        width: 60%;
     }
 
     section.price .box-price .row {
@@ -904,7 +933,7 @@ footer ul li .fa {
     .box-section .box-section-number .item-image {
         bottom: -126px;
         padding: 25px 10px;
-        border-radius: 0 10px 0 10px;
+        border-radius: 0 10px 10px 0;
     }
 
     .box-section .box-description .title {
@@ -916,11 +945,15 @@ footer ul li .fa {
         min-height: 210px;
         padding-top: 30px;
     }
+    .box-section .col-xs-12.text-center {
+        margin-top: 0;
+    }
     .box-section .box-price {
-        font-size: 28px;
-        position: absolute;
-        right: 25px;
-        top: -220px;
+        margin-top: 30px;
+    }
+    .box-section .btn-buy {
+        width: 50%;
+        margin: 10px auto 0;
     }
 
     section.waste-time .img-responsive {
@@ -947,5 +980,11 @@ footer ul li .fa {
     }
     .box-section .box-section-number .item-number {
         margin: 35px 0;
+    }
+    .box-section .col-xs-12.text-center {
+        margin-top: 155px;
+    }
+    .box-section .box-price {
+        font-size: 24px;
     }
 }

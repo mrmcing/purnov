@@ -177,8 +177,9 @@
                                     <p>+1 сессия вопрос/ответ</p>
                                 </div>
                             </div>
-                            <div class="col-md-2 col-xs-12">
+                            <div class="col-md-2 col-xs-12 text-center">
                                 <div class="box-price">26 000 <i class="fa fa-rub"></i></div>
+                                <a href="http://purnov.com/product/?id=127195&utm_source=Knopki&utm_medium=Opciony_na_start&utm_campaign=ons_chast1" class="btn btn-buy" target="_blank">Купить</a>
                             </div>
                         </div>
                     </div>
@@ -203,8 +204,9 @@
                                     <p>+1 сессия вопрос/ответ</p>
                                 </div>
                             </div>
-                            <div class="col-md-2 col-xs-12">
+                            <div class="col-md-2 col-xs-12 text-center">
                                 <div class="box-price">26 000 <i class="fa fa-rub"></i></div>
+                                <a href="http://purnov.com/product/?id=127196&utm_source=Knopki&utm_medium=Opciony_na_start&utm_campaign=ons_chast2" class="btn btn-buy" target="_blank">Купить</a>
                             </div>
                         </div>
                     </div>
@@ -229,8 +231,9 @@
                                     <p>+1 сессия вопрос/ответ</p>
                                 </div>
                             </div>
-                            <div class="col-md-2 col-xs-12">
+                            <div class="col-md-2 col-xs-12 text-center">
                                 <div class="box-price">26 000 <i class="fa fa-rub"></i></div>
+                                <a href="http://purnov.com/product/?id=127197&utm_source=Knopki&utm_medium=Opciony_na_start&utm_campaign=ons_chast3" class="btn btn-buy" target="_blank">Купить</a>
                             </div>
                         </div>
                     </div>
@@ -252,7 +255,7 @@
                             <p class="count">68 000 <i class="fa fa-rub"></i></p>
                         </div>
                         <div class="col-md-4 col-xs-12">
-                            <a href="#" class="btn btn-buy" target="_blank">купить</a>
+                            <a href="http://purnov.com/product/?id=127194&utm_source=Knopki&utm_medium=Opciony_na_start&utm_campaign=ons_polniy" class="btn btn-buy" target="_blank">купить</a>
                         </div>
                     </div>
                 </div>
