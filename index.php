@@ -52,7 +52,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-xs-12">
                 <h1>Опционы На Старт!</h1>
-                <p class="sub-title">Уникальная авторская методика Александра Пурнова для направленной торговле опционами</p>
+                <p class="sub-title">Уникальная авторская методика Александра Пурнова для направленной торговли опционами</p>
             </div>
             <div class="col-md-10 col-md-offset-1 col-xs-12">
                 <div class="box-what-is-it">
