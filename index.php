@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <h1>марафон «я покупаю ваши знания»</h1>
-                <p class="sub-title">призовой фонд - от 4000 до 52000 руб</p>
+                <p class="sub-title">призовой фонд - от 4000 до 52000 руб.</p>
             </div>
             <div class="col-xs-12 text-center">
                 <div class="arrow"></div>
@@ -228,9 +228,9 @@
                         <div class="col-md-4 col-md-offset-2">
                             <div class="box-price">
                                 <div class="title">Цена</div>
-                                <div class="old-price">26 170 руб</div>
-                                <div class="bonus">+ бонусы на сумму 9 000 руб БЕСПЛАТНО 2 домашних задания</div>
-                                <div class="price">13 736 руб</div>
+                                <div class="old-price">26 170 руб.</div>
+                                <div class="bonus">+ бонусы на сумму 9 000 руб. БЕСПЛАТНО 2 домашних задания</div>
+                                <div class="price">13 736 руб.</div>
 
                                 <a href="#" class="btn" target="_blank">участвую</a>
                             </div>
@@ -239,7 +239,7 @@
                 </div>
                 <div class="packages">
                     <h3>Пакет занятий «Начинающий»</h3>
-                    <div class="sub-title">Подходит, если Вы уже знаете о бирже достаточно для того,чтобы захотеть торговать прибыльно.</div>
+                    <div class="sub-title">Подходит, если Вы уже знаете о бирже достаточно для того, чтобы захотеть торговать прибыльно.</div>
 
                     <div class="row">
                         <div class="col-md-6">
@@ -269,9 +269,9 @@
                         <div class="col-md-4 col-md-offset-2">
                             <div class="box-price">
                                 <div class="title">Цена</div>
-                                <div class="old-price">24 890 руб</div>
-                                <div class="bonus">+ бонусы на сумму 6 000 руб БЕСПЛАТНО 3 домашних задания</div>
-                                <div class="price">15 112 руб</div>
+                                <div class="old-price">24 890 руб.</div>
+                                <div class="bonus">+ бонусы на сумму 6 000 руб. БЕСПЛАТНО 3 домашних задания</div>
+                                <div class="price">15 112 руб.</div>
 
                                 <a href="#" class="btn" target="_blank">участвую</a>
                             </div>
@@ -311,9 +311,9 @@
                         <div class="col-md-4 col-md-offset-2">
                             <div class="box-price">
                                 <div class="title">Цена</div>
-                                <div class="old-price">25 430 руб</div>
-                                <div class="bonus">бонусы на сумму 18 350 руб БЕСПЛАТНО 5 домашних заданий</div>
-                                <div class="price">20 344 руб</div>
+                                <div class="old-price">25 430 руб.</div>
+                                <div class="bonus">бонусы на сумму 18 350 руб. БЕСПЛАТНО 5 домашних заданий</div>
+                                <div class="price">20 344 руб.</div>
 
                                 <a href="#" class="btn" target="_blank">участвую</a>
                             </div>
@@ -331,7 +331,7 @@
                                 <li>функционирование цепочки трейдер-брокер-биржа, выбор брокера</li>
                                 <li>особенности выбора надежного брокера</li>
                                 <li>ММВБ, Форекс, Американская биржа</li>
-                                <li>SOT/SA и SP (spring)/UT (upthrust)</li>
+                                <li>SOT/SA и SP (spring)/UT (up-thrust)</li>
                                 <li>JOC+BTC, BUI+BTI</li>
                                 <li>тактики и стратегии торговли</li>
                                 <li>формирование стратегии и тактики для работы</li>
@@ -354,9 +354,9 @@
                         <div class="col-md-4 col-md-offset-2">
                             <div class="box-price">
                                 <div class="title">Цена</div>
-                                <div class="old-price">43 155 руб</div>
-                                <div class="bonus">бонусы на сумму 17 375 руб БЕСПЛАТНО 6 домашних заданий</div>
-                                <div class="price">34 524 руб</div>
+                                <div class="old-price">43 155 руб.</div>
+                                <div class="bonus">бонусы на сумму 17 375 руб. БЕСПЛАТНО 6 домашних заданий</div>
+                                <div class="price">34 524 руб.</div>
 
                                 <a href="#" class="btn" target="_blank">участвую</a>
                             </div>
@@ -371,12 +371,12 @@
                         <div class="col-md-6">
                             <h5>Сборка состоит из разбора сигналов:</h5>
                             <ul>
-                                <li>SOT+SA,</li>
-                                <li>PS/PSY,</li>
-                                <li>BC/SC,</li>
-                                <li>BT/ST,</li>
-                                <li>Spring и Up-thrust,</li>
-                                <li>LPS/LPSY,</li>
+                                <li>SOT+SA</li>
+                                <li>PS/PSY</li>
+                                <li>BC/SC</li>
+                                <li>BT/ST</li>
+                                <li>Spring и Up-thrust</li>
+                                <li>LPS/LPSY</li>
                                 <li>SOS/SOW/NR</li>
                                 <li>JOC/BUI, BTC/BTI.</li>
                             </ul>
@@ -384,9 +384,9 @@
                         <div class="col-md-4 col-md-offset-2">
                             <div class="box-price">
                                 <div class="title">Цена</div>
-                                <div class="old-price">23 560 руб</div>
+                                <div class="old-price">23 560 руб.</div>
                                 <div class="bonus">5 домашних заданий</div>
-                                <div class="price">18 848 руб</div>
+                                <div class="price">18 848 руб.</div>
 
                                 <a href="#" class="btn" target="_blank">участвую</a>
                             </div>
@@ -412,9 +412,9 @@
                         <div class="col-md-4 col-md-offset-2">
                             <div class="box-price">
                                 <div class="title">Цена</div>
-                                <div class="old-price">27 900 руб</div>
+                                <div class="old-price">27 900 руб.</div>
                                 <div class="bonus">5 домашних заданий</div>
-                                <div class="price">22 320 руб</div>
+                                <div class="price">22 320 руб.</div>
 
                                 <a href="#" class="btn" target="_blank">участвую</a>
                             </div>
@@ -442,7 +442,7 @@
                 <ul>
                     <li><b>1.</b> На выполнение домашнего задания дается только 1 попытка. Хорошо подготовьтесь!</li>
                     <li><b>2.</b> Использовать бонусы Вы можете только до 01 августа 2017 года. Не затягивайте.</li>
-                    <li><b>3.</b> Накопив достаточную сумму за выполнение домашних заданий, Вы можете списать ее при подключении к любому полному курсу Школы трейдинга. Например, накопив 20 000 руб и приобретая курс На Старт, Вы экономите 61% стоимости обучения.</li>
+                    <li><b>3.</b> Накопив достаточную сумму за выполнение домашних заданий, Вы можете списать ее при подключении к любому полному курсу Школы трейдинга. Например, накопив 20 000 руб. и приобретая курс На Старт, Вы экономите 61% стоимости обучения.</li>
                     <li><b>4.</b> Накопленные бонусы не суммируются и не применяются к возможным акциям в будущем.</li>
                     <li><b>5.</b> Приобретая выбранный курс Школы в рассрочку, списание бонусов происходит в соотношении: 30% бонусов и 70% оплаты. Применяется к каждому отдельному платежу.</li>
                 </ul>
