@@ -59,11 +59,11 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 col-sm-6 col-xs-12">
                 <h1>марафон «я покупаю ваши знания»</h1>
                 <p class="sub-title">ваши видео-уроки</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="scoreboard-result">
                     <div class="title">ваш результат</div>
                     <div class="right-answers"><div class="icon icon-right-answers"></div> правильные ответы:</div>
@@ -84,72 +84,79 @@
             </div>
             <div class="col-xs-12">
                 <div class="box-video">
-                    <div class="title"><span class="icon icon-open-video"></span>доступное видео</div>
-                    <div class="packages-name">Пакет занятий «Начинающий»</div>
-
-                    <div class="tree">
-                        <div class="course">
+				<div class="title"><span class="icon icon-open-video"></span>доступное видео</div>
+				<?php
+				session_start();
+				$id_obj = $_SESSION['object_id']; 
+				
+				if($id_obj == null) header('Location: http://purnov.com/test/david/mar/login.php');
+				else
+				{
+				
+					include_once("db.php");
+					//mysqli_query(" SET NAME 'utf8' ");
+					$sel = "SELECT ref.ref FROM ref
+									WHERE attr_id =54
+									AND object_id =".$id_obj."";
+					$res = mysqli_query($link,$sel);
+					$id_cursy = array();
+					while ($row = mysqli_fetch_array($res))
+					{
+						array_push($id_cursy,$row['ref']);
+					}
+					$curse_lesson = array();
+					for($i=0;$i<count($id_cursy);$i++)
+					{
+						$sel = "SELECT param.value, objects.name
+						FROM ref AS r1, ref AS r2, objects, param
+						WHERE objects.object_id =".$id_cursy[$i]."
+						AND r1.object_id =".$id_cursy[$i]."
+						AND r1.attr_id =51
+						AND r2.object_id = r1.ref
+						AND r2.attr_id =53
+						AND param.param_id = r2.ref
+						AND param.attr_id =53";
+					$res = mysqli_query($link,$sel);
+					if(mysqli_num_rows($res) != 0)
+					{
+					while ($row = mysqli_fetch_array($res))
+					{
+						
+						if($row['name'] != $name)
+						{
+						$name=$row['name'];
+						echo '<div class="packages-name">'.$row['name'].'</div>';
+						}
+						else
+						{
+							echo '<div class="tree">
+							<div class="course">
                             <a class="course-name collapsed" role="button" data-toggle="collapse" href="#course-1" aria-expanded="false" aria-controls="course-1">
-                                <b>1.</b> Побарный анализ
+                                 '.$row['value'].'
                             </a>
-                            <div class="collapse" id="course-1">
-                                <div class="lesson">
-                                    <a class="lesson-name" role="button" data-toggle="collapse" href="#pb-lesson-1" aria-expanded="false" aria-controls="lesson-1">
-                                        Урок 1.
-                                    </a>
-                                    <div class="collapse" id="pb-lesson-1">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <!-- 16:9 aspect ratio -->
-                                                <div class="embed-responsive embed-responsive-16by9">
-                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RElW3SEA-vc" frameborder="0" allowfullscreen=""></iframe>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="lesson">
-                                    <a class="lesson-name" role="button" data-toggle="collapse" href="#pb-lesson-2" aria-expanded="false" aria-controls="lesson-2">
-                                        Урок 2.
-                                    </a>
-                                    <div class="collapse" id="pb-lesson-2">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <!-- 16:9 aspect ratio -->
-                                                <div class="embed-responsive embed-responsive-16by9">
-                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RElW3SEA-vc" frameborder="0" allowfullscreen=""></iframe>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="lesson">
-                                    <a class="lesson-name" role="button" data-toggle="collapse" href="#pb-lesson-3" aria-expanded="false" aria-controls="lesson-3">
-                                        Урок 3.
-                                    </a>
-                                    <div class="collapse" id="pb-lesson-3">
-                                        <div class="row">
-                                            <div class="col-md-8 col-md-offset-2">
-                                                <!-- 16:9 aspect ratio -->
-                                                <div class="embed-responsive embed-responsive-16by9">
-                                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RElW3SEA-vc" frameborder="0" allowfullscreen=""></iframe>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+							</div>
+							</div>';
+						
+						}
+					}
+					}
+					else echo '<div class="packages-name">Купите курс !!!!</div>';
+					
+					
+					mysqli_close($link);
+					
+							
+					
+				}
+				
+				?>
             <div class="col-xs-12">
                 <div class="box-homework">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-5 col-xs-12">
                             <div class="title"><span class="icon icon-homework"></span>домашнее задание</div>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 col-xs-12">
                             <div class="box-warning">
                                 домашнее задание можно пройти только 1 раз.
                                 Убедитесь что у вас надежное подключение  к интернету и вы готовы к прохождению теста.
@@ -209,111 +216,115 @@
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="task-1">
                         <div class="question">
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <div class="title">вопрос</div>
-                                    <p class="text">1.1 Привить Вам навык систематической работы над  собой, своевременного изучения материала  и проработки полученных знаний.  Привить Вам навык систематической работы над  собой, своевременного изучения материала  и проработки полученных знаний</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="title">вопрос</div>
+                                        <p class="text">1.1 Привить Вам навык систематической работы над  собой, своевременного изучения материала  и проработки полученных знаний.  Привить Вам навык систематической работы над  собой, своевременного изучения материала  и проработки полученных знаний</p>
 
-                                    <div class="answer-options">
-                                        <a href="#" class="item">
-                                            <span class="icon">А</span> Первый вариант ответа
-                                        </a>
-                                        <a href="#" class="item">
-                                            <span class="icon">Б</span> Второй вариант ответа
-                                        </a>
-                                        <a href="#" class="item">
-                                            <span class="icon">В</span> Третий вариант ответа
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 text-center">
-                                    <div class="title">ответ</div>
-
-                                    <div class="input-group">
-                                        <input class="form-control" type="text" required>
-
-                                        <div class="input-group-btn">
-                                            <a type="button" class="btn" aria-label="Help">
-                                                <span class="glyphicon glyphicon-question-sign"></span>
+                                        <div class="answer-options">
+                                            <a href="#" class="item">
+                                                <span class="icon">А</span> Первый вариант ответа
+                                            </a>
+                                            <a href="#" class="item">
+                                                <span class="icon">Б</span> Второй вариант ответа
+                                            </a>
+                                            <a href="#" class="item">
+                                                <span class="icon">В</span> Третий вариант ответа
                                             </a>
                                         </div>
                                     </div>
+                                    <div class="col-md-2 text-center hidden">
+                                        <div class="title">ответ</div>
 
-                                    <a href="#" class="btn btn-send">Отправить</a>
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" required>
 
+                                            <div class="input-group-btn">
+                                                <a type="button" class="btn" aria-label="Help">
+                                                    <span class="glyphicon glyphicon-question-sign"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <a href="#" class="btn btn-send">Отправить</a>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="task-2">
                         <div class="question">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="title">вопрос</div>
-                                    <p class="text">1.1 Привить Вам навык систематической работы над  собой, своевременного изучения материала  и проработки полученных знаний.  Привить Вам навык систематической работы над  собой, своевременного изучения материала  и проработки полученных знаний</p>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-5 col-xs-12">
+                                        <div class="title">вопрос</div>
+                                        <p class="text">1.1 Привить Вам навык систематической работы над  собой, своевременного изучения материала  и проработки полученных знаний.  Привить Вам навык систематической работы над  собой, своевременного изучения материала  и проработки полученных знаний</p>
 
-                                    <div class="answer-options">
-                                        <a href="#" class="item">
-                                            <span class="icon">А</span> Вариант 1
-                                        </a>
-                                        <a href="#" class="item">
-                                            <span class="icon">Б</span> Вариант 2
-                                        </a>
-                                        <a href="#" class="item">
-                                            <span class="icon">В</span> Вариант 3
-                                        </a>
-                                        <a href="#" class="item">
-                                            <span class="icon">Г</span> Вариант 4
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <img class="img-responsive" src="img/task/task-images-1.jpg" alt="">
-                                </div>
-                                <div class="col-md-2 text-center">
-                                    <div class="title">ответ</div>
-
-                                    <div class="input-group">
-                                        <input class="form-control" type="text" required>
-
-                                        <div class="input-group-btn">
-                                            <a type="button" class="btn" aria-label="Help">
-                                                <span class="glyphicon glyphicon-question-sign"></span>
+                                        <div class="answer-options">
+                                            <a href="#" class="item">
+                                                <span class="icon">А</span> Вариант 1
+                                            </a>
+                                            <a href="#" class="item">
+                                                <span class="icon">Б</span> Вариант 2
+                                            </a>
+                                            <a href="#" class="item">
+                                                <span class="icon">В</span> Вариант 3
+                                            </a>
+                                            <a href="#" class="item">
+                                                <span class="icon">Г</span> Вариант 4
                                             </a>
                                         </div>
                                     </div>
+                                    <div class="col-md-7 col-xs-12">
+                                        <img class="img-responsive" src="img/task/task-images-1.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-2 text-center hidden">
+                                        <div class="title">ответ</div>
 
-                                    <a href="#" class="btn btn-send">Отправить</a>
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" required>
 
+                                            <div class="input-group-btn">
+                                                <a type="button" class="btn" aria-label="Help">
+                                                    <span class="glyphicon glyphicon-question-sign"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <a href="#" class="btn btn-send">Отправить</a>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="task-3">
                         <div class="question">
-                            <div class="row">
-                                ...
+                            <div class="container">
+                                <div class="row">...</div>
                             </div>
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="task-4">
                         <div class="question">
-                            <div class="row">
-                                ...
+                            <div class="container">
+                                <div class="row">...</div>
                             </div>
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="task-5">
                         <div class="question">
-                            <div class="row">
-                                ...
+                            <div class="container">
+                                <div class="row">...</div>
                             </div>
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="task-6">
                         <div class="question">
-                            <div class="row">
-                                ...
+                            <div class="container">
+                                <div class="row">...</div>
                             </div>
                         </div>
                     </div>
@@ -405,13 +416,14 @@
 
 
 <!-- Начало. Подключение скриптов в футер. -->
-<?// include $_SERVER['DOCUMENT_ROOT']."/class/footer_script.php";
-//$foother_object = new foother_object();
-//echo $foother_object->trimodal,
-//$foother_object->google_analytics,
-//$foother_object->jivosite,
-//$foother_object->zadarma;
-//?>
+<? include $_SERVER['DOCUMENT_ROOT']."/class/footer_script.php";
+$foother_object = new foother_object();
+echo
+$foother_object->yandex_metrika,
+$foother_object->trimodal,
+$foother_object->google_analytics,
+$foother_object->jivosite
+?>
 <!-- Конец. Подключение скриптов в футер. -->
 
 </body>
