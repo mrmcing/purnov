@@ -38,7 +38,7 @@
     <div class="top-line">
         <div class="container">
             <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item hidden-xs">
+                <li class="nav-item">
                     <a class="nav-phone" href="tel:+74996772081"><i class="fa fa-phone" aria-hidden="true"></i>  +7 (499) 6772081</a>
                 </li>
             </ul>
@@ -68,25 +68,27 @@
             </div>
             <div class="col-xs-12">
                 <div class="box-form">
-                    <form class="form-horizontal">
+                    <form id = "login_in" class="form-horizontal">
                         <div class="form-group">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
                                 <label class="sr-only" for="login">Логин...</label>
                                 <input type="text" class="form-control" name="login" id="login" placeholder="Логин..." required="">
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
                                 <label class="sr-only" for="password">Пароль...</label>
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Пароль..." required="">
                             </div>
-                            <div class="col-md-4">
-                                <button type="submit" class="btn">учавствовать</button>
+                            <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
+                                <button type="submit" class="btn">участвовать</button>
                             </div>
+							<div id="information" ></div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+	
 </section>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -94,16 +96,28 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/common.js"></script>
-
+<script>
+$('#login_in').on("submit", function(e){
+ e.preventDefault();
+ $.ajax ({ 
+  url: "login_in.php",
+  type: "POST",
+  data: {login: $("#login").val(), password: $("#password").val()},
+  success: function(data){
+   $("#information").text(data).color(white);
+  }
+ });
+})
+</script>
 
 <!-- Начало. Подключение скриптов в футер. -->
-<?// include $_SERVER['DOCUMENT_ROOT']."/class/footer_script.php";
-//$foother_object = new foother_object();
-//echo $foother_object->trimodal,
-//$foother_object->google_analytics,
-//$foother_object->jivosite,
-//$foother_object->zadarma;
-//?>
+<? include $_SERVER['DOCUMENT_ROOT']."/class/footer_script.php";
+$foother_object = new foother_object();
+echo
+$foother_object->yandex_metrika,
+$foother_object->google_analytics,
+$foother_object->jivosite
+?>
 <!-- Конец. Подключение скриптов в футер. -->
 
 </body>
